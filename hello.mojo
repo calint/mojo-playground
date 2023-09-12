@@ -14,13 +14,13 @@ struct Roome:
 
 struct Location:
     var name: StringLiteral
-    var items: DynamicVector[Item]
-    var entities: DynamicVector[Entity]
+    var items: DynamicVector[Int]
+    var entities: DynamicVector[Int]
 
     fn __init__(inout self):
         self.name = "Unnamed"
-        self.items = DynamicVector[Item]()
-        self.entities = DynamicVector[Entity]()
+        self.items = DynamicVector[Int]()
+        self.entities = DynamicVector[Int]()
 
 
 struct Item:
@@ -47,7 +47,7 @@ fn main():
     var loc = Location()
     loc.name = "roome"
     print(loc.name)
-#    roome.locations.push_back(loc)
+    # roome.locations.push_back(loc)
 
     var itm = Item()
     itm.name = "notebook"
