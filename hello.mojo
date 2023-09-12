@@ -42,6 +42,10 @@ struct Entity:
 
 
 fn main():
+    var dv = DynamicVector[Item]()
+    var it = Item()
+    # dv.push_back(it)
+
     var roome = Roome()
 
     var loc = Location()
