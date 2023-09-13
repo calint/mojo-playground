@@ -10,7 +10,17 @@ struct Item:
         return Self {name: name, qty: qty}
 
 
+struct Entity:
+    var name: StringLiteral
+
+    fn __init__(inout self, name: StringLiteral):
+        self.name = name
+
+
 fn main():
+    var lse = [Entity("Alice")]
+    print(lse)
+
     var ls = DynamicVector[Item]()
     ls.push_back(Item("Alice", 2))
     ls.push_back(Item("Bob", 3))
