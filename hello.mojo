@@ -11,9 +11,8 @@ struct Item:
 
 
 fn main():
-    var item = Item("Alice", 2)
     var ls = DynamicVector[Item]()
-    ls.push_back(item)
+    ls.push_back(Item("Alice", 2))
     print(len(ls))
     print(ls[0].name)
     print(ls[0].qty)
