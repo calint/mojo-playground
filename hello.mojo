@@ -13,6 +13,7 @@ struct Item:
 fn main():
     var ls = DynamicVector[Item]()
     ls.push_back(Item("Alice", 2))
+    ls.push_back(Item("Bob", 3))
     print(len(ls))
     print(ls[0].name)
     print(ls[0].qty)
